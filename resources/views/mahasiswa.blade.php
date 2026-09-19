@@ -30,7 +30,7 @@
 
                         <div class="d-flex justify-content-center mb-3">
                             <img
-                                src="Screenshot 2026-09-16 at 21.11.02.png"
+                                src="{{ asset('WhatsApp Image 2026-09-19 at 10.54.01.jpeg')}}"
                                 class="rounded-circle img-thumbnail shadow-sm"
                                 style="width: 120px; height: 120px; object-fit: cover;"
                                 alt="">
