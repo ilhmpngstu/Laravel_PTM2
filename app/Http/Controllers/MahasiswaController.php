@@ -21,6 +21,6 @@ class MahasiswaController extends Controller
            
         
         
-        return view("mahasiswa", compact("mahasiswa"));
+        return view("page.profile", compact("mahasiswa"));
     }
 }
