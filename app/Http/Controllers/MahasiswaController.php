@@ -10,14 +10,7 @@ class MahasiswaController extends Controller
     
     public function index()
     {
-        $mahasiswa = [
-            "nim" => "251011700008",
-            "nama" => "Ilham Pangestu",
-            "prodi" => "Sistem Informasi",
-            "kampus" => "Universitas Pamulang",
-            "email" => "ilhampangestu612@gmail.com",
-            "status" => "aktif",
-        ];
+        $mahasiswa = Mahasiswa::first();
            
         
         

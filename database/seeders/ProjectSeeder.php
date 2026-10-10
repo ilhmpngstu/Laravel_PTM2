@@ -9,28 +9,78 @@ class ProjectSeeder extends Seeder
 {
     public function run(): void
     {
-        $projects = [
-            [
-                'title' => 'Sistem Informasi Arsip Digital',
-                'description' => 'Aplikasi berbasis web untuk digitalisasi, pengarsipan surat masuk dan keluar, serta temu kembali dokumen cepat.',
-                'teknologi' => 'Laravel & Tailwind CSS',
+        $projects = [[
+                'title' => 'Sistem Akademik',
+                'description' => 'Aplikasi berbasis pengolahan web untuk mahasiswa',
+                'teknologi' => 'Larevel & Bootstrap',
                 'image' => 'project1.jpg',
-                'status' => 'Selesai',
+                'status' => 'selesai',
             ],
             [
-                'title' => 'Portal E-Commerce Fashion & Aksesori',
-                'description' => 'Platform toko online responsif dengan fitur katalog interaktif, keranjang belanja, dan integrasi payment gateway.',
-                'teknologi' => 'Laravel & Bootstrap 5',
+                'title' => 'E-Commerce Example1',
+                'description' => 'Aplikasi berbasis e-commerce',
+                'teknologi' => 'FLutter',
                 'image' => 'project2.jpg',
-                'status' => 'In Progress',
+                'status' => 'selesai',
             ],
             [
-                'title' => 'Sistem Rekomendasi Destinasi Wisata',
-                'description' => 'Sistem pendukung keputusan pemilihan tempat wisata lokal menggunakan metode Simple Additive Weighting (SAW).',
-                'teknologi' => 'PHP, MySQL & Leaflet JS',
+                'title' => 'Example 3',
+                'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, atque',
+                'teknologi' => 'Larevel & Bootstrap',
                 'image' => 'project3.jpg',
-                'status' => 'Selesai',
+                'status' => 'selesai',
             ],
+            [
+                'title' => 'Example 4',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ad?',
+                'teknologi' => 'Larevel & Bootstrap',
+                'image' => 'project4.jpg',
+                'status' => 'selesai',
+            ],
+            [
+                'title' => 'Example 5',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eaque?',
+                'teknologi' => 'Larevel & Bootstrap',
+                'image' => 'project5.jpg',
+                'status' => 'selesai',
+            ],
+             [
+                 'title' => 'Example 6',
+                'description' => 'Aplikasi berbasis pengolahan web untuk mahasiswa',
+                'teknologi' => 'Larevel & Bootstrap',
+                'image' => 'project6.jpg',
+                'status' => 'selesai',
+            ],
+            [
+                'title' => 'Example 7',
+                'description' => 'Aplikasi berbasis e-commerce',
+                'teknologi' => 'FLutter',
+                'image' => 'project7.jpg',
+                'status' => 'selesai',
+            ],
+            [
+                'title' => 'Example 8',
+                'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, atque',
+                'teknologi' => 'Larevel & Bootstrap',
+                'image' => 'project8.jpg',
+                'status' => 'selesai',
+            ],
+            [
+                'title' => 'Example 9',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ad?',
+                'teknologi' => 'Larevel & Bootstrap',
+                'image' => 'project9.jpg',
+                'status' => 'selesai',
+            ],
+            [
+                'title' => 'Example 10',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eaque?',
+                'teknologi' => 'Larevel & Bootstrap',
+                'image' => 'project10.jpg',
+                'status' => 'selesai',
+            ],
+ 
+            
             // ... tambahkan data lainnya
         ];
 
