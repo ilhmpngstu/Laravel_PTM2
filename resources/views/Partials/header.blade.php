@@ -20,6 +20,10 @@
                     <li class="nav-item">
                         <a href="{{ url('/about') }}" class="nav-link">About</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{ url('/admin') }}" class="nav-link">Admin</a>
+                        
+                    </li>
                 </ul>
             </div>
         </div>

@@ -10,9 +10,15 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('page.about');
 });
+Route::prefix('admin')->group(function (){
+    Route::get('/', function(){
+        return view('admin.template');
+
+    })->name('admin.home');
+});
 
 
-route:: get('/profile', [MahasiswaController::class, 'index']);
+route:: get('/profile', [MahasiswaController::class, 'index'])->name('profile');
 route:: get('/project', [ProjectController::class, 'index'])->name('project.index');
 route:: get('/project/{id}', [ProjectController::class, 'show'])->name('project.show');
 
