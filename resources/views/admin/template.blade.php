@@ -184,7 +184,7 @@
 
         <div class="top-nav-links">
             <a href="{{ route('admin.dashboard') }}">Dashboard</a>
-            <a href="{{ route('home') }}">Logout</a>
+            <a href="{{ route('admin.logout') }}">Logout</a>
         </div>
     </header>
 

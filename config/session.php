@@ -18,7 +18,7 @@ return [
     |
     */
 
-    'driver' => env('SESSION_DRIVER', 'database'),
+    'driver' => (env('SESSION_DRIVER') === 'database' && !file_exists('/.dockerenv')) ? 'file' : env('SESSION_DRIVER', 'file'),
 
     /*
     |--------------------------------------------------------------------------
