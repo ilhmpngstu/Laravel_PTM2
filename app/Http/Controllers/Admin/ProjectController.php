@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Project;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
@@ -105,5 +106,16 @@ class ProjectController extends Controller
         $project->delete();
 
         return redirect()->route('admin.projects.index')->with('success', 'Project deleted successfully.');
+    }
+
+  
+    public function exportPdf()
+    {
+        $projects = Project::all();
+
+        $pdf = Pdf::loadView('admin.project.pdf', compact('projects'))
+                  ->setPaper('a4', 'portrait');
+
+        return $pdf->stream('Laporan Project - projects.pdf');
     }
 }

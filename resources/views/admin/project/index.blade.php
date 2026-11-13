@@ -6,9 +6,14 @@
 <div class="card-custom">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h3 class="fw-normal text-dark mb-0" style="font-size: 1.75rem;">Data Projects</h3>
-        <a href="{{ route('admin.projects.create') }}" class="btn btn-primary px-3 py-2" style="font-size: 14px;">
-            Tambah Project
-        </a>
+        <div class="d-flex gap-2">
+            <a href="{{ route('admin.projects.create') }}" class="btn btn-primary px-3 py-2" style="font-size: 14px;">
+                Tambah Project
+            </a>
+            <a href="{{ route('admin.projects.pdf') }}" class="btn btn-danger px-3 py-2" style="font-size: 14px;" target="_blank">
+                Cetak PDF
+            </a>
+        </div>
     </div>
 
     <div class="table-responsive">

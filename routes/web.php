@@ -41,6 +41,10 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
         return view('admin.dashboard', compact('totalProjects', 'projectsSelesai', 'projectsProses', 'latestProjects'));
     })->name('dashboard');
 
+    // Route Export PDF (harus diletakkan SEBELUM Route::resource agar tidak tertabrak route {project})
+    Route::get('projects/pdf', [AdminProjectController::class, 'exportPdf'])->name('projects.pdf');
+    Route::get('project/pdf', [AdminProjectController::class, 'exportPdf'])->name('project.pdf');
+
     Route::resource('projects', AdminProjectController::class);
     Route::resource('project', AdminProjectController::class);
 });

@@ -162,6 +162,24 @@
             padding: 30px 0 10px;
             margin-top: auto;
         }
+
+        /* Watermark Badge */
+        .watermark-badge {
+            position: fixed;
+            bottom: 12px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid #d0d7de;
+            color: #495057;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+            pointer-events: none;
+            z-index: 1050;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+            letter-spacing: 0.3px;
+        }
     </style>
 </head>
 
@@ -238,11 +256,16 @@
             <!-- Konten Halaman -->
             @yield('content')
 
-            <!-- Footer (Persis Screenshot 1) -->
+            <!-- Footer -->
             <footer class="admin-footer">
-                &copy; {{ date('Y') }} MyProfile. All rights reserved.
+                &copy; {{ date('Y') }} MyProfile &bull; <strong>ILHAM PANGESTU</strong> (NIM: <strong>251011700008</strong>). All rights reserved.
             </footer>
         </main>
+    </div>
+
+    <!-- Watermark Badge Mahasiswa -->
+    <div class="watermark-badge">
+        <strong>ILHAM PANGESTU</strong> &bull; 251011700008
     </div>
 
     <!-- Scripts: jQuery, Bootstrap 5, DataTables -->
